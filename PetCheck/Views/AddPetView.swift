@@ -47,7 +47,7 @@ struct AddPetView: View {
                 .frame(height: 45)
                 .background(Color(UIColor.secondarySystemBackground))
             Button(action: {print("saving pet")}, label: {
-                Text("Save Pet")
+                Text("Save")
             })
             .frame(maxWidth: .infinity)
             .frame(height: 45)

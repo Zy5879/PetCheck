@@ -7,22 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5736F4E82C4DD4240099DFDE /* AddPetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5736F4E72C4DD4240099DFDE /* AddPetView.swift */; };
 		57875ED32C4DB4AA00BB06F6 /* PetCheckApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57875ED22C4DB4AA00BB06F6 /* PetCheckApp.swift */; };
 		57875ED72C4DB4AB00BB06F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57875ED62C4DB4AB00BB06F6 /* Assets.xcassets */; };
 		57875EDA2C4DB4AB00BB06F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57875ED92C4DB4AB00BB06F6 /* Preview Assets.xcassets */; };
 		57875EE42C4DB65200BB06F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57875EE32C4DB65200BB06F6 /* LaunchScreen.storyboard */; };
 		57875EE82C4DBA4100BB06F6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57875EE72C4DBA4100BB06F6 /* HomeView.swift */; };
-		57875EEA2C4DBA6A00BB06F6 /* AddPetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57875EE92C4DBA6A00BB06F6 /* AddPetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5736F4E72C4DD4240099DFDE /* AddPetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPetView.swift; sourceTree = "<group>"; };
 		57875ECF2C4DB4AA00BB06F6 /* PetCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57875ED22C4DB4AA00BB06F6 /* PetCheckApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetCheckApp.swift; sourceTree = "<group>"; };
 		57875ED62C4DB4AB00BB06F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57875ED92C4DB4AB00BB06F6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		57875EE32C4DB65200BB06F6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57875EE72C4DBA4100BB06F6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		57875EE92C4DBA6A00BB06F6 /* AddPetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddPetView.swift; path = PetCheck/AddPetView.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +77,8 @@
 		57875EE02C4DB4D300BB06F6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5736F4E72C4DD4240099DFDE /* AddPetView.swift */,
 				57875EE72C4DBA4100BB06F6 /* HomeView.swift */,
-				57875EE92C4DBA6A00BB06F6 /* AddPetView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -169,7 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				57875ED32C4DB4AA00BB06F6 /* PetCheckApp.swift in Sources */,
-				57875EEA2C4DBA6A00BB06F6 /* AddPetView.swift in Sources */,
+				5736F4E82C4DD4240099DFDE /* AddPetView.swift in Sources */,
 				57875EE82C4DBA4100BB06F6 /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
