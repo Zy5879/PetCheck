@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		5736F4E82C4DD4240099DFDE /* AddPetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5736F4E72C4DD4240099DFDE /* AddPetView.swift */; };
+		5736F4EB2C4EB5C70099DFDE /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5736F4EA2C4EB5C70099DFDE /* AuthManager.swift */; };
+		5736F4EE2C4EB6400099DFDE /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = 5736F4ED2C4EB6400099DFDE /* Auth */; };
+		5736F4F12C4EB7C70099DFDE /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 5736F4F02C4EB7C70099DFDE /* Supabase */; };
+		5736F4F32C4EBBBE0099DFDE /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5736F4F22C4EBBBE0099DFDE /* AuthViewModel.swift */; };
 		57875ED32C4DB4AA00BB06F6 /* PetCheckApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57875ED22C4DB4AA00BB06F6 /* PetCheckApp.swift */; };
 		57875ED72C4DB4AB00BB06F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57875ED62C4DB4AB00BB06F6 /* Assets.xcassets */; };
 		57875EDA2C4DB4AB00BB06F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57875ED92C4DB4AB00BB06F6 /* Preview Assets.xcassets */; };
@@ -17,6 +21,8 @@
 
 /* Begin PBXFileReference section */
 		5736F4E72C4DD4240099DFDE /* AddPetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPetView.swift; sourceTree = "<group>"; };
+		5736F4EA2C4EB5C70099DFDE /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		5736F4F22C4EBBBE0099DFDE /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		57875ECF2C4DB4AA00BB06F6 /* PetCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57875ED22C4DB4AA00BB06F6 /* PetCheckApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetCheckApp.swift; sourceTree = "<group>"; };
 		57875ED62C4DB4AB00BB06F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -30,17 +36,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5736F4F12C4EB7C70099DFDE /* Supabase in Frameworks */,
+				5736F4EE2C4EB6400099DFDE /* Auth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5736F4E92C4EB5A30099DFDE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5736F4EA2C4EB5C70099DFDE /* AuthManager.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5736F4EF2C4EB7C70099DFDE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		57875EC62C4DB4AA00BB06F6 = {
 			isa = PBXGroup;
 			children = (
 				57875ED12C4DB4AA00BB06F6 /* PetCheck */,
 				57875ED02C4DB4AA00BB06F6 /* Products */,
+				5736F4EF2C4EB7C70099DFDE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +79,7 @@
 		57875ED12C4DB4AA00BB06F6 /* PetCheck */ = {
 			isa = PBXGroup;
 			children = (
+				5736F4E92C4EB5A30099DFDE /* Helpers */,
 				57875EE22C4DB4E900BB06F6 /* ViewModels */,
 				57875EE12C4DB4DB00BB06F6 /* Models */,
 				57875EE02C4DB4D300BB06F6 /* Views */,
@@ -93,6 +118,7 @@
 		57875EE22C4DB4E900BB06F6 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				5736F4F22C4EBBBE0099DFDE /* AuthViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -113,6 +139,10 @@
 			dependencies = (
 			);
 			name = PetCheck;
+			packageProductDependencies = (
+				5736F4ED2C4EB6400099DFDE /* Auth */,
+				5736F4F02C4EB7C70099DFDE /* Supabase */,
+			);
 			productName = PetCheck;
 			productReference = 57875ECF2C4DB4AA00BB06F6 /* PetCheck.app */;
 			productType = "com.apple.product-type.application";
@@ -141,6 +171,9 @@
 				Base,
 			);
 			mainGroup = 57875EC62C4DB4AA00BB06F6;
+			packageReferences = (
+				5736F4EC2C4EB6400099DFDE /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			productRefGroup = 57875ED02C4DB4AA00BB06F6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -168,7 +201,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5736F4F32C4EBBBE0099DFDE /* AuthViewModel.swift in Sources */,
 				57875ED32C4DB4AA00BB06F6 /* PetCheckApp.swift in Sources */,
+				5736F4EB2C4EB5C70099DFDE /* AuthManager.swift in Sources */,
 				5736F4E82C4DD4240099DFDE /* AddPetView.swift in Sources */,
 				57875EE82C4DBA4100BB06F6 /* HomeView.swift in Sources */,
 			);
@@ -376,6 +411,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5736F4EC2C4EB6400099DFDE /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:supabase/supabase-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5736F4ED2C4EB6400099DFDE /* Auth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5736F4EC2C4EB6400099DFDE /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Auth;
+		};
+		5736F4F02C4EB7C70099DFDE /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5736F4EC2C4EB6400099DFDE /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 57875EC72C4DB4AA00BB06F6 /* Project object */;
 }
