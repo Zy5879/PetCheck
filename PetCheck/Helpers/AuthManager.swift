@@ -13,7 +13,7 @@ class AuthService {
     
     func loginUser() async throws {
         do {
-            let session = try await client.auth.session
+            _ = try await client.auth.session
         } catch let error {
             print(error.localizedDescription)
             throw error
@@ -42,7 +42,8 @@ class AuthService {
         do {
             try await client.auth.signOut()
         } catch let error {
-            
+            print(error.localizedDescription)
+            throw error
         }
     }
 }

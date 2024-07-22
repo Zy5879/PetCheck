@@ -12,6 +12,7 @@
 		5736F4EE2C4EB6400099DFDE /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = 5736F4ED2C4EB6400099DFDE /* Auth */; };
 		5736F4F12C4EB7C70099DFDE /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 5736F4F02C4EB7C70099DFDE /* Supabase */; };
 		5736F4F32C4EBBBE0099DFDE /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5736F4F22C4EBBBE0099DFDE /* AuthViewModel.swift */; };
+		5736F4F52C4EC4A60099DFDE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5736F4F42C4EC4A60099DFDE /* LoginView.swift */; };
 		57875ED32C4DB4AA00BB06F6 /* PetCheckApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57875ED22C4DB4AA00BB06F6 /* PetCheckApp.swift */; };
 		57875ED72C4DB4AB00BB06F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57875ED62C4DB4AB00BB06F6 /* Assets.xcassets */; };
 		57875EDA2C4DB4AB00BB06F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57875ED92C4DB4AB00BB06F6 /* Preview Assets.xcassets */; };
@@ -23,6 +24,7 @@
 		5736F4E72C4DD4240099DFDE /* AddPetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPetView.swift; sourceTree = "<group>"; };
 		5736F4EA2C4EB5C70099DFDE /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		5736F4F22C4EBBBE0099DFDE /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		5736F4F42C4EC4A60099DFDE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		57875ECF2C4DB4AA00BB06F6 /* PetCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57875ED22C4DB4AA00BB06F6 /* PetCheckApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetCheckApp.swift; sourceTree = "<group>"; };
 		57875ED62C4DB4AB00BB06F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			children = (
 				5736F4E72C4DD4240099DFDE /* AddPetView.swift */,
 				57875EE72C4DBA4100BB06F6 /* HomeView.swift */,
+				5736F4F42C4EC4A60099DFDE /* LoginView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5736F4F52C4EC4A60099DFDE /* LoginView.swift in Sources */,
 				5736F4F32C4EBBBE0099DFDE /* AuthViewModel.swift in Sources */,
 				57875ED32C4DB4AA00BB06F6 /* PetCheckApp.swift in Sources */,
 				5736F4EB2C4EB5C70099DFDE /* AuthManager.swift in Sources */,
