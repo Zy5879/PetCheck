@@ -8,10 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5736F4E82C4DD4240099DFDE /* AddPetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5736F4E72C4DD4240099DFDE /* AddPetView.swift */; };
-		5736F4EB2C4EB5C70099DFDE /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5736F4EA2C4EB5C70099DFDE /* AuthManager.swift */; };
 		5736F4EE2C4EB6400099DFDE /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = 5736F4ED2C4EB6400099DFDE /* Auth */; };
 		5736F4F12C4EB7C70099DFDE /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 5736F4F02C4EB7C70099DFDE /* Supabase */; };
-		5736F4F32C4EBBBE0099DFDE /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5736F4F22C4EBBBE0099DFDE /* AuthViewModel.swift */; };
 		5736F4F52C4EC4A60099DFDE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5736F4F42C4EC4A60099DFDE /* LoginView.swift */; };
 		5736F4F72C4ED1D20099DFDE /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5736F4F62C4ED1D20099DFDE /* SignUpView.swift */; };
 		57875ED32C4DB4AA00BB06F6 /* PetCheckApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57875ED22C4DB4AA00BB06F6 /* PetCheckApp.swift */; };
@@ -23,8 +21,6 @@
 
 /* Begin PBXFileReference section */
 		5736F4E72C4DD4240099DFDE /* AddPetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPetView.swift; sourceTree = "<group>"; };
-		5736F4EA2C4EB5C70099DFDE /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
-		5736F4F22C4EBBBE0099DFDE /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		5736F4F42C4EC4A60099DFDE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		5736F4F62C4ED1D20099DFDE /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		57875ECF2C4DB4AA00BB06F6 /* PetCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,14 +44,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5736F4E92C4EB5A30099DFDE /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				5736F4EA2C4EB5C70099DFDE /* AuthManager.swift */,
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
 		5736F4EF2C4EB7C70099DFDE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -83,9 +71,7 @@
 		57875ED12C4DB4AA00BB06F6 /* PetCheck */ = {
 			isa = PBXGroup;
 			children = (
-				5736F4E92C4EB5A30099DFDE /* Helpers */,
 				57875EE22C4DB4E900BB06F6 /* ViewModels */,
-				57875EE12C4DB4DB00BB06F6 /* Models */,
 				57875EE02C4DB4D300BB06F6 /* Views */,
 				57875ED22C4DB4AA00BB06F6 /* PetCheckApp.swift */,
 				57875ED62C4DB4AB00BB06F6 /* Assets.xcassets */,
@@ -114,17 +100,9 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		57875EE12C4DB4DB00BB06F6 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		57875EE22C4DB4E900BB06F6 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				5736F4F22C4EBBBE0099DFDE /* AuthViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -208,10 +186,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5736F4F52C4EC4A60099DFDE /* LoginView.swift in Sources */,
-				5736F4F32C4EBBBE0099DFDE /* AuthViewModel.swift in Sources */,
 				57875ED32C4DB4AA00BB06F6 /* PetCheckApp.swift in Sources */,
 				5736F4F72C4ED1D20099DFDE /* SignUpView.swift in Sources */,
-				5736F4EB2C4EB5C70099DFDE /* AuthManager.swift in Sources */,
 				5736F4E82C4DD4240099DFDE /* AddPetView.swift in Sources */,
 				57875EE82C4DBA4100BB06F6 /* HomeView.swift in Sources */,
 			);
