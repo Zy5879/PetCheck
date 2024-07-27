@@ -27,7 +27,6 @@ extension LocalDatabase {
         try db.create(table: "user") { table in
             table.column("id", .text).primaryKey()
             table.column("name",.text).notNull()
-            table.column("email", .text).notNull()
         }
         
         try db.create(table: "pet") { table in
@@ -35,7 +34,7 @@ extension LocalDatabase {
             table.column("name", .text).notNull()
             table.column("dateOfBirth",.date).notNull()
             table.column("breed", .text).notNull()
-            table.belongsTo("users", onDelete: .cascade).notNull()
+            table.belongsTo("user", onDelete: .cascade).notNull()
         }
     }
 }

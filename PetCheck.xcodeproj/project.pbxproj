@@ -102,10 +102,9 @@
 		57875EE02C4DB4D300BB06F6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				579D6BAD2C5497B80036949E /* AuthViews */,
 				5736F4E72C4DD4240099DFDE /* AddPetView.swift */,
 				57875EE72C4DBA4100BB06F6 /* HomeView.swift */,
-				5736F4F42C4EC4A60099DFDE /* LoginView.swift */,
-				5736F4F62C4ED1D20099DFDE /* SignUpView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -133,6 +132,15 @@
 				579D6BA92C54880D0036949E /* PetCheckModels.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		579D6BAD2C5497B80036949E /* AuthViews */ = {
+			isa = PBXGroup;
+			children = (
+				5736F4F62C4ED1D20099DFDE /* SignUpView.swift */,
+				5736F4F42C4EC4A60099DFDE /* LoginView.swift */,
+			);
+			path = AuthViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
