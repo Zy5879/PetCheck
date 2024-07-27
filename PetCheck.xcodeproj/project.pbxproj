@@ -22,6 +22,7 @@
 		579D6BA72C54845D0036949E /* LocalDatabase+Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579D6BA62C54845D0036949E /* LocalDatabase+Persistance.swift */; };
 		579D6BAA2C54880D0036949E /* PetCheckModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579D6BA92C54880D0036949E /* PetCheckModels.swift */; };
 		579D6BAF2C5498200036949E /* StartUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579D6BAE2C5498200036949E /* StartUpView.swift */; };
+		579D6BB12C5554270036949E /* PreHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579D6BB02C5554270036949E /* PreHomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		579D6BA62C54845D0036949E /* LocalDatabase+Persistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocalDatabase+Persistance.swift"; sourceTree = "<group>"; };
 		579D6BA92C54880D0036949E /* PetCheckModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetCheckModels.swift; sourceTree = "<group>"; };
 		579D6BAE2C5498200036949E /* StartUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartUpView.swift; sourceTree = "<group>"; };
+		579D6BB02C5554270036949E /* PreHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreHomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				5736F4E72C4DD4240099DFDE /* AddPetView.swift */,
 				57875EE72C4DBA4100BB06F6 /* HomeView.swift */,
 				579D6BAE2C5498200036949E /* StartUpView.swift */,
+				579D6BB02C5554270036949E /* PreHomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				579D6BA52C54393B0036949E /* LocalDatabase+Migrator.swift in Sources */,
 				579D6BA12C5438560036949E /* LocalDatabase.swift in Sources */,
 				5736F4F52C4EC4A60099DFDE /* LoginView.swift in Sources */,
+				579D6BB12C5554270036949E /* PreHomeView.swift in Sources */,
 				57875ED32C4DB4AA00BB06F6 /* PetCheckApp.swift in Sources */,
 				5736F4F72C4ED1D20099DFDE /* SignUpView.swift in Sources */,
 				5736F4E82C4DD4240099DFDE /* AddPetView.swift in Sources */,
