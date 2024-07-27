@@ -20,6 +20,7 @@
 		579D6BA32C5438A70036949E /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 579D6BA22C5438A70036949E /* GRDB */; };
 		579D6BA52C54393B0036949E /* LocalDatabase+Migrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579D6BA42C54393B0036949E /* LocalDatabase+Migrator.swift */; };
 		579D6BA72C54845D0036949E /* LocalDatabase+Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579D6BA62C54845D0036949E /* LocalDatabase+Persistance.swift */; };
+		579D6BAA2C54880D0036949E /* PetCheckModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579D6BA92C54880D0036949E /* PetCheckModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		579D6BA02C5438560036949E /* LocalDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDatabase.swift; sourceTree = "<group>"; };
 		579D6BA42C54393B0036949E /* LocalDatabase+Migrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocalDatabase+Migrator.swift"; sourceTree = "<group>"; };
 		579D6BA62C54845D0036949E /* LocalDatabase+Persistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocalDatabase+Persistance.swift"; sourceTree = "<group>"; };
+		579D6BA92C54880D0036949E /* PetCheckModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetCheckModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		57875ED12C4DB4AA00BB06F6 /* PetCheck */ = {
 			isa = PBXGroup;
 			children = (
+				579D6BA82C5487EE0036949E /* Models */,
 				579D6B9F2C54382D0036949E /* LocalDatabase */,
 				57875EE22C4DB4E900BB06F6 /* ViewModels */,
 				57875EE02C4DB4D300BB06F6 /* Views */,
@@ -122,6 +125,14 @@
 				579D6BA62C54845D0036949E /* LocalDatabase+Persistance.swift */,
 			);
 			path = LocalDatabase;
+			sourceTree = "<group>";
+		};
+		579D6BA82C5487EE0036949E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				579D6BA92C54880D0036949E /* PetCheckModels.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				579D6BAA2C54880D0036949E /* PetCheckModels.swift in Sources */,
 				579D6BA52C54393B0036949E /* LocalDatabase+Migrator.swift in Sources */,
 				579D6BA12C5438560036949E /* LocalDatabase.swift in Sources */,
 				5736F4F52C4EC4A60099DFDE /* LoginView.swift in Sources */,
