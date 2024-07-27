@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		5736F4E82C4DD4240099DFDE /* AddPetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5736F4E72C4DD4240099DFDE /* AddPetView.swift */; };
 		5736F4EE2C4EB6400099DFDE /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = 5736F4ED2C4EB6400099DFDE /* Auth */; };
-		5736F4F12C4EB7C70099DFDE /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 5736F4F02C4EB7C70099DFDE /* Supabase */; };
 		5736F4F52C4EC4A60099DFDE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5736F4F42C4EC4A60099DFDE /* LoginView.swift */; };
 		5736F4F72C4ED1D20099DFDE /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5736F4F62C4ED1D20099DFDE /* SignUpView.swift */; };
 		57875ED32C4DB4AA00BB06F6 /* PetCheckApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57875ED22C4DB4AA00BB06F6 /* PetCheckApp.swift */; };
@@ -17,6 +16,10 @@
 		57875EDA2C4DB4AB00BB06F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57875ED92C4DB4AB00BB06F6 /* Preview Assets.xcassets */; };
 		57875EE42C4DB65200BB06F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57875EE32C4DB65200BB06F6 /* LaunchScreen.storyboard */; };
 		57875EE82C4DBA4100BB06F6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57875EE72C4DBA4100BB06F6 /* HomeView.swift */; };
+		579D6BA12C5438560036949E /* LocalDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579D6BA02C5438560036949E /* LocalDatabase.swift */; };
+		579D6BA32C5438A70036949E /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 579D6BA22C5438A70036949E /* GRDB */; };
+		579D6BA52C54393B0036949E /* LocalDatabase+Migrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579D6BA42C54393B0036949E /* LocalDatabase+Migrator.swift */; };
+		579D6BA72C54845D0036949E /* LocalDatabase+Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579D6BA62C54845D0036949E /* LocalDatabase+Persistance.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,9 @@
 		57875ED92C4DB4AB00BB06F6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		57875EE32C4DB65200BB06F6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57875EE72C4DBA4100BB06F6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		579D6BA02C5438560036949E /* LocalDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDatabase.swift; sourceTree = "<group>"; };
+		579D6BA42C54393B0036949E /* LocalDatabase+Migrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocalDatabase+Migrator.swift"; sourceTree = "<group>"; };
+		579D6BA62C54845D0036949E /* LocalDatabase+Persistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocalDatabase+Persistance.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,8 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5736F4F12C4EB7C70099DFDE /* Supabase in Frameworks */,
 				5736F4EE2C4EB6400099DFDE /* Auth in Frameworks */,
+				579D6BA32C5438A70036949E /* GRDB in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +77,7 @@
 		57875ED12C4DB4AA00BB06F6 /* PetCheck */ = {
 			isa = PBXGroup;
 			children = (
+				579D6B9F2C54382D0036949E /* LocalDatabase */,
 				57875EE22C4DB4E900BB06F6 /* ViewModels */,
 				57875EE02C4DB4D300BB06F6 /* Views */,
 				57875ED22C4DB4AA00BB06F6 /* PetCheckApp.swift */,
@@ -107,6 +114,16 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		579D6B9F2C54382D0036949E /* LocalDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				579D6BA02C5438560036949E /* LocalDatabase.swift */,
+				579D6BA42C54393B0036949E /* LocalDatabase+Migrator.swift */,
+				579D6BA62C54845D0036949E /* LocalDatabase+Persistance.swift */,
+			);
+			path = LocalDatabase;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -125,7 +142,7 @@
 			name = PetCheck;
 			packageProductDependencies = (
 				5736F4ED2C4EB6400099DFDE /* Auth */,
-				5736F4F02C4EB7C70099DFDE /* Supabase */,
+				579D6BA22C5438A70036949E /* GRDB */,
 			);
 			productName = PetCheck;
 			productReference = 57875ECF2C4DB4AA00BB06F6 /* PetCheck.app */;
@@ -157,6 +174,7 @@
 			mainGroup = 57875EC62C4DB4AA00BB06F6;
 			packageReferences = (
 				5736F4EC2C4EB6400099DFDE /* XCRemoteSwiftPackageReference "supabase-swift" */,
+				579D6B9E2C5436E10036949E /* XCRemoteSwiftPackageReference "GRDB.swift" */,
 			);
 			productRefGroup = 57875ED02C4DB4AA00BB06F6 /* Products */;
 			projectDirPath = "";
@@ -185,10 +203,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				579D6BA52C54393B0036949E /* LocalDatabase+Migrator.swift in Sources */,
+				579D6BA12C5438560036949E /* LocalDatabase.swift in Sources */,
 				5736F4F52C4EC4A60099DFDE /* LoginView.swift in Sources */,
 				57875ED32C4DB4AA00BB06F6 /* PetCheckApp.swift in Sources */,
 				5736F4F72C4ED1D20099DFDE /* SignUpView.swift in Sources */,
 				5736F4E82C4DD4240099DFDE /* AddPetView.swift in Sources */,
+				579D6BA72C54845D0036949E /* LocalDatabase+Persistance.swift in Sources */,
 				57875EE82C4DBA4100BB06F6 /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +426,14 @@
 				minimumVersion = 2.5.1;
 			};
 		};
+		579D6B9E2C5436E10036949E /* XCRemoteSwiftPackageReference "GRDB.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:groue/GRDB.swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -413,10 +442,10 @@
 			package = 5736F4EC2C4EB6400099DFDE /* XCRemoteSwiftPackageReference "supabase-swift" */;
 			productName = Auth;
 		};
-		5736F4F02C4EB7C70099DFDE /* Supabase */ = {
+		579D6BA22C5438A70036949E /* GRDB */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5736F4EC2C4EB6400099DFDE /* XCRemoteSwiftPackageReference "supabase-swift" */;
-			productName = Supabase;
+			package = 579D6B9E2C5436E10036949E /* XCRemoteSwiftPackageReference "GRDB.swift" */;
+			productName = GRDB;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
